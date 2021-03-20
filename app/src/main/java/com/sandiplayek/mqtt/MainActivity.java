@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText textMessage;
     private Button publishMessage, subscribe, unSubscribe, disconnect;
 
-    public String MQTT_BROKER_URL = "tcp://13.234.200.52:1883";
-    public String PUBLISH_TOPIC = "vote";
-    public String CLIENT_ID = "vote";
-    public String USERNAME = "wbldc";
-    public String PASSWORD = "Infotech@2021";
-    public String offlineMSG = "I am going to offline";
+    public String MQTT_BROKER_URL = "";
+    public String PUBLISH_TOPIC = "";
+    public String CLIENT_ID = "";
+    public String USERNAME = "";
+    public String PASSWORD = "";
+    public String offlineMSG = "";
     public int QOS = 1;
 
     @Override

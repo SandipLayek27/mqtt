@@ -22,7 +22,7 @@ AND
 
 ```sh
 dependencies {
-	implementation 'com.github.SandipLayek27:SQLDatabaseHelper:1.5'
+  implementation 'com.github.SandipLayek27:SQLDatabaseHelper:1.5'
   // ALSO ADD
   implementation fileTree(dir: '../mqttlib/libs', include: '*.jar')
 }
@@ -37,17 +37,6 @@ dependencies {
 3. Published Message - Hex Format
 4. Un-Subscribe Topic.
 5. Disconnect MQTT Protocol
-
-★ Useful variables
-```
-public String MQTT_BROKER_URL = "tcp:/XXX.XXX.XXX.XXX:XXXX"; [tcp://ip:port]
-public String PUBLISH_TOPIC = "";
-public String CLIENT_ID = "";
-public String USERNAME = "";
-public String PASSWORD = "";
-public String offlineMSG = "";
-public int QOS = 1;
-```
 
 ★ Useful variables
 ```
@@ -66,18 +55,12 @@ Readme.aboutMQTT();
 Readme.structureMQTT();
 ```
 
-★ Readme In Details
-```
-Readme.aboutMQTT();
-Readme.structureMQTT();
-```
-
 ★ Call Constructor
 ```
 mqttClientHolder = new MQTTClientHolder(MainActivity.this, MQTT_BROKER_URL, PUBLISH_TOPIC, CLIENT_ID, USERNAME, PASSWORD, offlineMSG, QOS);
 ```
 
-★ Established Connection
+★ 1. Established Connection
 ```
 client = mqttClientHolder.getMqttClient(new ResponseMQTT() {
     @Override
@@ -87,7 +70,7 @@ client = mqttClientHolder.getMqttClient(new ResponseMQTT() {
 });
 ```
 
-★ Subscribe Topic
+★ 2. Subscribe Topic
 ```
 try {
     mqttClientHolder.subscribe(client, new ResponseMQTT() {
@@ -101,7 +84,7 @@ try {
 }
 ```
 
-★ Published Message
+★ 3. Published Message
 ```
 String msg = "Your Message";
 if (!msg.isEmpty()) {
@@ -120,7 +103,7 @@ if (!msg.isEmpty()) {
 }
 ```
 
-★ Un-Subscribe Topic
+★ 4. Un-Subscribe Topic
 ```
 try {
     mqttClientHolder.unSubscribe(client, new ResponseMQTT() {
@@ -134,7 +117,7 @@ try {
 }
 ```
 
-★ Disconnect MQTT Protocol
+★ 5. Disconnect MQTT Protocol
 ```
 try {
     mqttClientHolder.disconnect(client, new ResponseMQTT() {

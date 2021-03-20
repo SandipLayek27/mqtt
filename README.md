@@ -1,4 +1,4 @@
-# mqtt
+# MQTT
 MQTT Connection Protocol
 
 ## Developed

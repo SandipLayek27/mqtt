@@ -22,7 +22,7 @@ AND
 
 ```sh
 dependencies {
-  implementation 'com.github.SandipLayek27:SQLDatabaseHelper:1.5'
+  implementation 'com.github.SandipLayek27:mqtt:1.0'
   // ALSO ADD
   implementation fileTree(dir: '../mqttlib/libs', include: '*.jar')
 }

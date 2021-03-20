@@ -40,6 +40,7 @@ dependencies {
 
 ★ Useful variables
 ```
+private MqttAndroidClient client;
 private MQTTClientHolder mqttClientHolder;
 public String MQTT_BROKER_URL = "tcp:/XXX.XXX.XXX.XXX:XXXX"; [tcp://ip:port]
 public String PUBLISH_TOPIC = "";

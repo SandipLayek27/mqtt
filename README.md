@@ -28,6 +28,14 @@ dependencies {
 }
 ```
 
+# ★ Add to manifest.xml
+```
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+```
+
 # ★ Aout MQTT
 ![alt text](https://raw.githubusercontent.com/SandipLayek27/mqtt/master/app/src/main/res/drawable/mqtt.png)
 
